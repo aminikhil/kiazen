@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  height: 100%;
+	color: #000;
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*Navbar*/
+.navbar-brand img {
+  height: 70px;
+  margin: -12px 0 -13px -15px;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255,255,255,0.3);
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+  margin-left: 31px;
+  font-size: 18px;
+  padding: 0;
+}
+
+.nav-link:hover{
+  color: #F44336 !important;
+  border-left: 2px solid #F44336;
+  font-weight: bold;
+}
+
+.active-home{
+  color: #F44336 !important;
+  border-left: 2px solid #F44336 !important;
+  font-weight: bold;
+}
+
+.welcome h1 {
+  padding-top: 130px;
+  font-size: 60px;
+  color: #fff;
+}
+
+.welcome hr {
+  height: 3px;
+  width: 220px;
+  background-color: #F00;
+  margin-left: 0;
+}
+
+.welcome h2 {
+  padding-top: 50px;
+  font-size: 80px;
+  color: #fff;
+}
+
+.welcome h4 {
+  padding-top: 13px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.welcome button {
+  padding: 5px 9px 5px 9px;
+  margin-top: 30px;
+  margin-right: 0;
+  background-color: #FF2010;
+  color: #fff;
+  font-size: 26px;
+  border: 1px solid #FF2010;
+  border-radius: 4px;
+}
+
+.welcome button:hover {
+  background-color: #FFF;
+  color: #FF2010;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('images/img1.png');
+
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*services*/
+.services{
+  width: 100%;
+  margin-top: 70px;
+  background-color: #fbfafa;
+}
+
+.services1{
+  height: 70vh;
+  margin-bottom: 70px;
+}
+
+
+.services h5{
+  padding-top: 78px;
+  letter-spacing: 10px;
+}
+
+.services hr{
+  height: 2px;
+  width: 100px;
+  background-color: #F00;
+  margin-left: 0;
+}
+
+.services h2{
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+.services1 img{
+  max-height: 230px;
+  box-shadow: 2px 2px #2b3138;
+  z-index: 100 !important;
+  position: absolute;
+  background-color: #fff;
+}
+
+.services1-2 {
+  margin-top: 50px;
+  background-color: #2b3138;
+  left: -150px;
+  padding: 50px 50px 50px 120px;
+  color: #fff;
+}
