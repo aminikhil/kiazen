@@ -222,3 +222,30 @@ body {
   height: 50%;
   padding-top: 10px;
 }
+
+/*digital marketing*/
+
+.digital-marketing{
+  height: 100vh;
+}
+
+.digital-marketing h2{
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+.digital-marketing img {
+  margin-top: 20%;
+  width: 400px;
+  height: 400px;
+}
+
+.digital-marketing h4{
+  margin-top: 40%;
+  font-size: 34px !important;
+  vertical-align: middle !important;
+  text-align: center;
+/*  line-height: 90px;*/
+}
