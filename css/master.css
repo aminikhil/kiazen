@@ -288,7 +288,21 @@ body {
   padding-top: 40px;
   font-weight: bold;
   font-size: 48px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
+}
+
+.website-design img {
+  padding: 25px;
+  padding-top: 0;
+}
+
+.website-design h5 {
+  padding-top: 20px;
+}
+
+.web-dsg img {
+  margin-top: 50px;
+  width: 353px !important;  
 }
 
 
