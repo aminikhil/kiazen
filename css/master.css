@@ -101,6 +101,7 @@ body {
   width: 100%;
   margin-top: 70px;
   background-color: #fbfafa;
+  padding-bottom: 70px;
 }
 
 .services1{
@@ -166,3 +167,58 @@ body {
   text-align: justify;
 }
 
+/*card view*/
+
+.card-view1 {
+  width: 100%;
+  background-color: #fff;
+  margin: 15px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 2px #2b3138;
+}
+
+.card-view1 img{
+  width: 100% !important;
+  height: 60%;
+  padding-top: 10px;
+}
+
+.card-view1 h4 {
+  padding-top: 20px;
+  text-align: left;
+  font-size: 24px;
+  color: #2b3138;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.card-view1 hr{
+  height: 1px;
+  width: 130px;
+  background-color: #F00;
+  margin-left: 0;
+}
+
+.card-view1 p{
+  text-align: justify;
+}
+
+.card-view1:hover{
+  background-color: #2b3138;
+  color: #fff;
+}
+
+.card-view1:hover h4{
+  color: #fff;
+}
+
+.card-view-row2 {
+  margin-top: 20px;
+}
+
+.card-view-row2 .card-view1 img{
+  width: 100% !important;
+  height: 50%;
+  padding-top: 10px;
+}
