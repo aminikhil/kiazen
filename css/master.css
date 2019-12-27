@@ -428,35 +428,12 @@ body {
   text-align: right; !important;
 }
 
-/*display-advs*/
-.display-ads {
-  padding: 50px 0 50px 0;
-  height: 100vh;
-}
-
-.display-ads h2{
-  font-weight: bold;
-  font-size: 48px;
-  padding-bottom: 40px;
-}
-
-.display-ads img {
-  max-width: 400px;
-}
-
-.display-ads h5{
-  margin-top: 20%;
-  font-size: 34px !important;
-  vertical-align: middle !important;
-  text-align: center;
-}
-
 /*social-media*/
 .social-media {
   padding: 50px 0 50px 0;
 }
 
-.social-media h2,.real-estate h2 {
+.social-media h2,.real-estate h3 {
   padding-top: 80px;
   font-weight: bold;
   font-size: 48px;
@@ -470,9 +447,12 @@ body {
   text-align: center;
 }
 
+.social-media-card {
+  padding-top: 50px;
+}
+
 .social-media-card img {
-  width: 70%;
-  max-height: 500px;
+  max-height: 400px;
   padding-top: 20px;
 }
 
@@ -491,6 +471,30 @@ body {
   margin-bottom: 0px;
 }
 
+/*.website-design .skill-card:hover .skill-card__body {
+  height: 200px;
+}*/
+
+.real-estate .skill-card .skill-card__header {
+  background: #fff;
+  height: 300px;
+}
+
+.real-estate .skill-card:hover .skill-card__header {
+  background: #2b3138;
+}
+
+.real-estate .skill-card .skill-card__header .skill-card__icon {
+  max-height: 300px !important; 
+  width: 100%;
+  padding: 5px;
+  text-align: right; !important;
+}
+
+.our-clients {
+  height: 100vh;
+}
+
 .our-clients h2, .about-us h2{
   padding-top: 80px;
   font-weight: bold;
@@ -504,6 +508,63 @@ body {
   max-height: 200px;
   height: auto;
   padding: 5px;
+}
+
+/* review */
+
+.review-box {
+  text-align: center;
+}
+
+.review-box h2{
+  padding-top: 80px;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 80px;
+}
+
+.review-box img{
+  background: #F44336;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.review-item {
+  text-align: center;
+  height: 400px;
+}
+
+.caption2 {
+  z-index: -1 !important;
+  box-shadow: 0 0 15px 1px rgba(166, 163, 223, 0.5);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.caption2 h6 {
+  margin-top: 80px;
+  font-weight: bold;
+  color: #000 !important;
+}
+.caption2 small {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: block;
+  color: #000 !important;
+}
+
+.caption2 p {
+  text-align: center;
+  padding: 0 50px;
+  font-size: 15px;
+  color: #808080 !important;
+}
+
+.carousel-indicators li {
+  background-color: #F44336;
 }
 
 .about-us h4 {
