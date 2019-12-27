@@ -23,6 +23,19 @@ body {
   background-color: rgb(255,255,255,0.3);
 }
 
+.fa-bars {
+  color: #FFF !important;
+  font-size: 30px !important;
+}
+
+.navbar button {
+  border: none;
+}
+
+.navbar button:hover .fa-bars{
+  color: #F44336;
+}
+
 .nav-link {
   color: #FFFFFF !important;
   margin-left: 31px;
@@ -325,7 +338,7 @@ body {
   padding-bottom: 50px;
 }
 
-.website-design h2{
+.website-design h3{
   padding-top: 40px;
   font-weight: bold;
   font-size: 48px;

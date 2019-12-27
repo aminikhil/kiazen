@@ -10,6 +10,28 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 <link href="css/master.css" rel="stylesheet" type="text/css">
+<link href="css/master_mobile.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    function checkOffset() {
+        $(".navbar-collapse").removeClass("show");
+        // alert('Hello');
+    }
+    // // Run function when scrolling
+    var scrollValue = $(window).scrollTop();
+    $(document).scroll( function() {
+      if(Math.abs($(document).scrollTop() - scrollValue) >= 500){
+        scrollValue = $(document).scrollTop();
+        checkOffset();
+      }
+      });
+    // Run function on Clicking
+    $('.nav-item a').click(function() {
+        checkOffset();
+    });
+  });
+</script>
 </head>
 <body>
 <section id="home" class="header sticky-top">
@@ -35,12 +57,12 @@
       <h2>Enhance your<br>
         Business</h2>
       <div class="row">
-        <div class="col">
+        <div class="col-lg-6 col-sm-12">
           <h4>Deliver a digital strategy with measurable<br>
             performance that maximises your brand and <br>
             your vision.</h4>
         </div>
-        <div class="col text-right">
+        <div class="col-lg-6 col-sm-12 text-right">
           <a href="#contact_us"><button>Let's Talk</button></a>
         </div>
       </div>
@@ -53,9 +75,9 @@
       <h5>SERVICES</h5><hr>
       <h2>Services That Excites Us</h2>
       <div class="row">
-        <div class="col"> 
+        <div class="col-lg-6 col-sm-12"> 
           <img class="img-fluid" src="images/img9.png"> </div>
-        <div class="col">
+        <div class="col-lg-6 col-sm-12">
           <h4>Achieve your business objectives and goals using the online channels</h4>
         </div>
       </div>
@@ -263,11 +285,11 @@
 </section>
 <section class="website-design">
   <div class="container text-center">
-    <h2>Web Designing &amp; Publishing</h2>
+    <h3>Web Designing &amp; Publishing</h3>
     <div class="row">
-      <div class="col">
+      <div class="col-lg-6 col-sm-12">
         <img class="img-fluid" src="images/img10.png"> </div>
-      <div class="col web-dsg">
+      <div class="col-lg-6 col-sm-12 web-dsg">
         <h5>Website designing a modernize way to promote your business and industry. At <b>Kaizen Infotek</b> we take in pains too.</h5>
         <h5>Another powerful medium to let you allow to step into digital modernity. Website Development</h5>
         <img class="img-fluid" src="images/img11.png"> </div>
@@ -473,7 +495,7 @@
   <div class="parallax" style="background-image: url('images/img42.jpg')">
     <div class="container">
       <div class="row add">
-        <div class="col-6 add-text">
+        <div class="col-lg-6 col-sm-12 add-text">
           <h4>Kaizen Infotek<br>
               Mahalaxmi vihar<br> 
               Vishrantwadi<br>
@@ -483,7 +505,7 @@
               </span>
               </h4>
         </div>
-        <div class="col-6 add-map">
+        <div class="col-lg-6 col-sm-12 add-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0506239566826!2d73.87592471489351!3d18.57175628737922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bf69a03aab%3A0xeba37fd3ca871d0a!2sKaizen%20Infotek%20%7C%20Digital%20Marketing%20In%20Pune%20%7C%20Best%20Digital%20Marketing%20Company%20%7C%20SEO%20%7C%20Google%20Ads%20%7C%20Social%20Media%20Marketing!5e0!3m2!1sen!2sin!4v1577446472100!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
       </div>
