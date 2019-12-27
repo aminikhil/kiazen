@@ -1,11 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+*{
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100%;
 	color: #000;
   font-family: 'Quicksand', sans-serif;
-  scroll-behavior: smooth;
+  
 }
 
 /*Navbar*/
@@ -65,9 +68,9 @@ body {
 }
 
 .welcome button {
-  padding: 5px 9px 5px 9px;
+  padding: 5px 15px 5px 15px;
   margin-top: 30px;
-  margin-right: 0;
+  margin-right: 20px;
   background-color: #FF2010;
   color: #fff;
   font-size: 26px;
@@ -110,24 +113,6 @@ body {
 }
 
 
-.services h5{
-  padding-top: 78px;
-  letter-spacing: 10px;
-}
-
-.services hr{
-  height: 2px;
-  width: 100px;
-  background-color: #F00;
-  margin-left: 0;
-}
-
-.services h2{
-  font-weight: bold;
-  font-size: 48px;
-  padding-bottom: 0px;
-}
-
 .services1 img{
   width: auto;
   height: auto;
@@ -135,7 +120,7 @@ body {
   max-width: 400px;
   margin-top: 100px;
   
-  box-shadow: 2px 2px #2b3138;
+  box-shadow: 1px 1px 2px #2b3138;
   z-index: 100 !important;
   position: absolute;
   background-color: #fff;
@@ -170,6 +155,87 @@ body {
 .services1-2 p{
   text-align: justify;
 }
+
+.services a {
+  font-size: 100px;
+  background-color: #fbfafa;
+  cursor: pointer;
+}
+
+.services a i{
+  color: red;
+}
+
+#cardView1, #cardView1off {
+  display: none;
+}
+
+/*cardView1*/
+
+.skill-card {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.skill-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #2b3138;
+  color: #fff;
+}
+.skill-card:hover .skill-card__body {
+  height: 270px;
+}
+.skill-card:hover .skill-card__body p {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+  transition-duration: 0.5s;
+}
+.skill-card:hover .skill-card__body p {
+  transition-delay: 0.25s;
+}
+.skill-card .skill-card__header {
+  background-color: #eb6c3f;
+  height: 170px;
+  overflow: hidden;
+}
+.skill-card .skill-card__header .skill-card__icon {
+  display: block;
+  /* width: 310px;
+  height: 170px; */
+}
+.skill-card .skill-card__body {
+  height: 70px;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+.skill-card .skill-card__body .skill-card__title {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.skill-card .skill-card__body p {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+.skill-card .skill-card__body hr{
+ height: 1px;
+ width: 130px;
+ background-color: #F00;
+ margin-left: 0;
+}
+
+/*cardView1Ends*/
+
 
 /*card view*/
 
@@ -231,23 +297,35 @@ body {
 
 .digital-marketing{
   height: 100vh;
+  margin-top: 20px;
+}
+
+.digital-marketing h5{
+  padding-top: 100px;
+  letter-spacing: 10px;
+}
+
+.digital-marketing hr{
+  height: 2px;
+  width: 100px;
+  background-color: #F00;
+  margin-left: 0;
 }
 
 .digital-marketing h2{
-  padding-top: 50px;
   font-weight: bold;
   font-size: 48px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .digital-marketing img {
-  margin-top: 20%;
+  margin-top: 10px;
   width: 400px;
   height: 400px;
 }
 
 .digital-marketing h4{
-  margin-top: 40%;
+  margin-top: 100px;
   font-size: 34px !important;
   vertical-align: middle !important;
   text-align: center;
