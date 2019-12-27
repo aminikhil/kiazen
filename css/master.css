@@ -203,9 +203,10 @@ body {
   overflow: hidden;
 }
 .skill-card .skill-card__header .skill-card__icon {
-  display: block;
-  /* width: 310px;
-  height: 170px; */
+  /*display: block;*/
+  /*max-width: auto;*/
+  /*max-height: 160px; */
+  /*text-align: center;*/
 }
 .skill-card .skill-card__body {
   height: 70px;
@@ -340,7 +341,7 @@ body {
   padding-bottom: 70px;
 }
 
-.seo h2{
+.seo h3{
   font-weight: bold;
   font-size: 48px;
   padding-bottom: 40px;
@@ -359,6 +360,20 @@ body {
 
 .seo .card-view1 h4{
   padding-bottom: 0;
+}
+
+.seo .skill-card .skill-card__header {
+  background: #fff;
+}
+
+.seo .skill-card:hover .skill-card__header {
+  background: #2b3138;
+}
+
+.seo .skill-card .skill-card__header .skill-card__icon {
+  max-height: 160px !important; 
+  padding: 5px;
+  text-align: right; !important;
 }
 
 /*website-design*/
@@ -386,11 +401,31 @@ body {
   margin-top: 50px;
   width: 353px !important;  
 }
-
+.website-design .cardView1 {
+  margin-top: 50px;
+}
 .website-design .card-view1 img{
   width: auto;
   height: auto;
   padding: 80px;
+}
+
+.website-design .skill-card:hover .skill-card__body {
+  height: 200px;
+}
+
+.website-design .skill-card .skill-card__header {
+  background: #fff;
+}
+
+.website-design .skill-card:hover .skill-card__header {
+  background: #2b3138;
+}
+
+.website-design .skill-card .skill-card__header .skill-card__icon {
+  max-height: 160px !important; 
+  padding: 5px;
+  text-align: right; !important;
 }
 
 /*display-advs*/
