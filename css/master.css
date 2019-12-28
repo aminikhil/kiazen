@@ -176,11 +176,16 @@ body {
   cursor: pointer;
 }
 
-.services a i{
+.digital-marketing a i{
   color: red;
+  font-size: 70px;
 }
 
-#cardView1, #cardView1off {
+#services_section {
+  display: none;
+}
+
+#cardView11, #cardView1off {
   display: none;
 }
 
@@ -254,18 +259,18 @@ body {
 /*digital marketing*/
 
 .digital-marketing{
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 20px;
 }
 
 .digital-marketing h5{
   padding-top: 100px;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 
 .digital-marketing hr{
   height: 2px;
-  width: 100px;
+  width: 130px;
   background-color: #F00;
   margin-left: 0;
 }
@@ -274,6 +279,8 @@ body {
   font-weight: bold;
   font-size: 48px;
   padding-bottom: 0px;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .digital-marketing img {
@@ -288,6 +295,11 @@ body {
   vertical-align: middle !important;
   text-align: center;
 /*  line-height: 90px;*/
+}
+
+#downArrow {
+  margin-top: 40px !important;
+  cursor: pointer;
 }
 
 /* seo*/
