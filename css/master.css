@@ -56,37 +56,38 @@ body {
 }
 
 .welcome h1 {
-  padding-top: 130px;
-  font-size: 60px;
+  padding-top: 17vh !important;
+  font-size: 4vw;
   color: #fff;
 }
 
 .welcome hr {
   height: 3px;
-  width: 220px;
+  width: 16vW;
   background-color: #F00;
   margin-left: 0;
 }
 
 .welcome h2 {
-  padding-top: 50px;
-  font-size: 80px;
+  padding-top: 10vh !important;
+  font-size: 6vw;
   color: #fff;
 }
 
 .welcome h4 {
   padding-top: 13px;
-  font-size: 24px;
+  font-size: 2vw !important;
   color: #fff;
 }
 
 .welcome button {
   padding: 5px 15px 5px 15px;
-  margin-top: 30px;
-  margin-right: 20px;
+  margin: 30px 10px 20px 0;
+  /*margin-top: 30px;*/
+  /*margin-right: 20px;*/
   background-color: #FF2010;
   color: #fff;
-  font-size: 26px;
+  font-size: 2vw;
   border: 1px solid #FF2010;
   border-radius: 4px;
 }
@@ -103,7 +104,7 @@ body {
   background-image: url('images/img1.png');
 
   /* Full height */
-  height: 100vh;
+  min-height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -129,8 +130,8 @@ body {
 .services1 img{
   width: auto;
   height: auto;
-  max-height: 350px;
-  max-width: 400px;
+  /*max-height: 350px;*/
+  max-width: 30%;
   margin-top: 100px;
   
   box-shadow: 1px 1px 2px #2b3138;
@@ -278,7 +279,7 @@ body {
 .digital-marketing img {
   margin-top: 10px;
   width: 400px;
-  height: 400px;
+  /*height: 400px;*/
 }
 
 .digital-marketing h4{
