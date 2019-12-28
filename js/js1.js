@@ -21,11 +21,8 @@ function scrollFunction() {
         ($(this).scrollTop() < $('#services').position().top - 1)) {
         onClickNav('home');
       } else if (($(this).scrollTop() >= $('#services').position().top - 1) &&
-        ($(this).scrollTop() < $('#real_estate').position().top - 1)) {
-        onClickNav('services');
-      } else if (($(this).scrollTop() >= $('#real_estate').position().top - 1) &&
         ($(this).scrollTop() < $('#our_clients').position().top - 1)) {
-        onClickNav('real_estate');
+        onClickNav('services');
       } else if (($(this).scrollTop() >= $('#our_clients').position().top - 1) &&
         ($(this).scrollTop() < $('#about_us').position().top - 1)) {
         onClickNav('our_clients');
@@ -74,4 +71,39 @@ function onClickNav(nav) {
   } else if (nav == "contact_us") {
     document.getElementById("nav_contactus").classList.add("active-home");
   }
+}
+
+function validate() {
+  var x = document.forms["contact_us_form"]["name"].value;
+  if (x == "") {
+    alert("Please Enter Your Name!");
+    return false;
+  }
+  x = document.forms["contact_us_form"]["company-name"].value;
+  if (x == "") {
+    alert("Please Enter Your Company Name!");
+    return false;
+  }
+  x = document.forms["contact_us_form"]["email-id"].value;
+  if (x == "") {
+    alert("Please Enter Your Email ID!");
+    return false;
+  }
+  x = document.forms["contact_us_form"]["email-id"].value;
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");  
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address");  
+    return false;  
+  }  
+  var num = document.forms["contact_us_form"]["contact-no"].value;
+  if(num == "") {
+    alert("Please Enter Your Contact Number!");
+    return false;
+  }
+  if (isNaN(num)){  
+    document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+    return false;  
+  }
+  return true;
 }

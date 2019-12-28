@@ -36,6 +36,12 @@
     });
   });
 </script>
+<?php 
+  if(!empty($_GET['message'])) {
+    $message = $_GET['message'];
+    echo "<script>alert('$message');</script>";
+  }
+  ?>
 </head>
 <body>
 <section id="home" class="header sticky-top">
@@ -384,7 +390,7 @@
   <div class="container text-center">
     <h2>Contact Us</h2>
     <h5>Hurry Up! Contact us for growing your business with us.</h5>
-    <form name="contact_us_form" class="contact_us_form" action="" method="post" onSubmit="validate()">
+    <form name="contact_us_form" class="contact_us_form" action="contact_us.php" method="post" onSubmit="return validate()">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <input type="text" name="name" placeholder="Name">
