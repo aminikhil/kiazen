@@ -110,8 +110,11 @@ body {
   margin-top: 20px;
 }
 .digital-marketing h5 {
-  padding-top: 100px;
-  letter-spacing: 8px;
+  padding-top: 50px;
+/*  letter-spacing: 8px;*/
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
 }
 .digital-marketing hr {
   height: 2px;
@@ -352,7 +355,7 @@ body {
 .social-media {
   padding: 50px 0 50px 0;
 }
-.social-media h2, .real-estate h3 {
+.social-media h2  {
   padding-top: 80px;
   font-weight: bold;
   font-size: 48px;
@@ -377,35 +380,7 @@ body {
 }
 
 
-/*real e-state*/
-.real-estate1 {
-  padding-top: 50px;
-}
-.real-estate .card-view1 h4 {
-  text-align: left;
-  padding-top: 0px;
-  margin-top: 30px;
-}
-.real-estate .card-view1 p {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-.real-estate .skill-card .skill-card__header {
-  background: #fff;
-  height: 300px;
-}
-.real-estate .skill-card:hover .skill-card__header {
-  background: #2b3138;
-}
-.skill-card:hover .skill-card__body {
-  height: 290px;
-}
-.real-estate .skill-card .skill-card__header .skill-card__icon {
-  max-height: 300px !important;
-  width: 100%;
-  padding: 5px;
-  text-align: right !important;
-}
+
 
 /*our clients*/
 .our-clients {
@@ -447,7 +422,7 @@ body {
 }
 .review-item {
   text-align: center;
-  height: 400px;
+  height: 430px;
 }
 .caption2 {
   z-index: -1 !important;

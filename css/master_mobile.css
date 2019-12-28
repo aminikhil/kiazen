@@ -57,6 +57,7 @@
   }
   .digital-marketing h5 {
     padding-top: 40px;
+    font-size: 3vw;
   }
   .services1 img {
     z-index: 0;
@@ -81,9 +82,12 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  .social-media h2, .real-estate h3 {
+  .social-media h2 {
     padding: 20px 0 0 0 !important;
     font-size: 10vw !important;
+  }
+  .real-estate h3 {
+    
   }
   .social-media h4, .real-estate h4 {
     margin-top: 20px !important;
@@ -118,10 +122,10 @@
   }
   .review-item {
     text-align: center;
-    height: 450px;
+    height: 470px;
   }
   .caption2 {
-    margin: 0px 10px 50px 10px;
+    margin: 0px 5px 30px 5px;
     left: 0px !important;
     right: 0px !important;
   }

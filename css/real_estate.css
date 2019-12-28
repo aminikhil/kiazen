@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navbar {
+  background-color: #000 !important;
+}
+
+/*real e-state*/
+.real-estate h3 {
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+.real-estate1 {
+  padding-top: 80px;
+}
+.real-estate .card-view1 h4 {
+  text-align: left;
+  padding-top: 0px;
+  margin-top: 30px;
+}
+.real-estate .card-view1 p {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.real-estate .skill-card .skill-card__header {
+  background: #fff;
+  height: 300px;
+}
+.real-estate .skill-card:hover .skill-card__header {
+  background: #2b3138;
+}
+.skill-card:hover .skill-card__body {
+  height: 290px;
+}
+.real-estate .skill-card .skill-card__header .skill-card__icon {
+  max-height: 300px !important;
+  width: 100%;
+  padding: 5px;
+  text-align: right !important;
+}
+
