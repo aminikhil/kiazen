@@ -153,15 +153,10 @@
 		padding-top: 20px;
 	}
 
-	.footer .parallax {
-		height: 150vh; !important;
+	.footer {
+		/*height: auto !important;*/
+		padding-bottom: 230px;
 	}
-
-	.footer1 {
-		padding-top: 20vh;
-		bottom: 0;
-	}
-
 }
 
 @media only screen and (max-width: 1000px) {
