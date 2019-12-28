@@ -59,6 +59,11 @@ body {
   padding-top: 17vh !important;
   font-size: 4vw;
   color: #fff;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+  transition-duration: 3s;
+  transition-delay: 10s;
 }
 
 .welcome hr {
@@ -625,4 +630,8 @@ body {
 .footer{
   background-image: url("../images/img42.jpg"); 
   /*height: auto !important;*/
+}
+
+.footer-bottom a{
+  color: #fff;
 }

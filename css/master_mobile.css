@@ -117,7 +117,7 @@
 	}
 
 	.social-media-card img {
-		max-width: 70% !important/*;
+		max-width: 70% !important;/*;
 		padding: 0 15% 0 15%;*/
 		height: auto !important;
 		max-height: auto !important;
@@ -164,7 +164,7 @@
 
 	.footer {
 		/*height: auto !important;*/
-		padding-bottom: 230px;
+		padding-bottom: 10px;
 	}
 
 	.digital-marketing {
