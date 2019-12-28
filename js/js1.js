@@ -4,33 +4,15 @@ window.onscroll = function () {
 };
 //navigation bar color change on scroll
 function scrollFunction() {
+  
+//  for navigation  bar color change on scroll
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.backgroundColor = "#000";
   } else {
     document.getElementById("navbar").style.backgroundColor = "rgb(255,255,255,0.3)";
   }
-
-  //  $(document).on('scroll', function() {
-  //    if(($(this).scrollTop()>=$('#home').position().top-1) && 
-  //    	($(this).scrollTop()<$('#services').position().top-1)){
-  //        onClickNav('home');
-  //    } else if(($(this).scrollTop()>=$('#services').position().top-1) && 
-  //    	($(this).scrollTop()<$('#real_estate').position().top-1)){
-  //        onClickNav('services');
-  //    } else if(($(this).scrollTop()>=$('#real_estate').position().top-1) && 
-  //    	($(this).scrollTop()<$('#our_clients').position().top-1)){
-  //        onClickNav('real_estate');
-  //    } else if(($(this).scrollTop()>=$('#our_clients').position().top-1) && 
-  //    	($(this).scrollTop()<$('#about_us').position().top-1)){
-  //        onClickNav('our_clients');
-  //    } else if(($(this).scrollTop()>=$('#about_us').position().top-1) && 
-  //    	($(this).scrollTop()<$('#contact_us').position().top-1)){
-  //        onClickNav('about_us');
-  //    } else if($(this).scrollTop()>=$('#contact_us').position().top-1){
-  //        onClickNav('contact_us');
-  //    }
-  // });
-
+  
+//  for navigation through page
   $(window).scroll(function () {
     clearTimeout($.data(this, 'scrollTimer'));
     $.data(this, 'scrollTimer', setTimeout(function () {
@@ -59,7 +41,6 @@ function scrollFunction() {
 
 function expandCardView() {
   var style = document.getElementById("services_section").style.display;
-  // alert(style);
   if (style == "") {
     document.getElementById("services_section").style.display = "block";
     document.getElementById("cardView1on").style.display = "none";
@@ -70,6 +51,7 @@ function expandCardView() {
     document.getElementById("cardView1on").style.display = "block";
   }
 }
+
 
 function onClickNav(nav) {
   document.getElementById("nav_home").classList.remove("active-home");
