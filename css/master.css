@@ -135,8 +135,8 @@ body {
 }
 .digital-marketing h4 {
   margin-top: 100px;
-  font-size: 34px !important;
-  vertical-align: middle !important;
+  font-size: 24px;
+  /* vertical-align: middle !important; */
   text-align: center;
 }
 #downArrow {

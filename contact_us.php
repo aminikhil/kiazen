@@ -6,7 +6,7 @@
     $email = $_POST["email-id"];
     $cont_no = $_POST["contact-no"];
     $msg = $_POST["message"];
-    
+
     require 'phpmailer/PHPMailerAutoload.php';
     $mail = new PHPMailer;
     $mail->Host='smtp.gmail.com';
@@ -17,11 +17,11 @@
     $mail->Password="kaizen@dreambig";
 
     $mail->setFrom($email,$name);
-    $mail->addAddress("waykosn@gmail.com.com");
+    $mail->addAddress("abhijitsarvade39@gmail.com");
 
     $mail->isHTML(true);
     $mail->Subject="Enquiry From Site : " .$name;
-    $mail->Body="<b>Name : </b>" .$name. "<br><b>Company Name : </b>" .$comp_name. "<br><b>Email ID : </b>" .$email. "<br><b>Contact No. : </b>" .$cont_no. "<br><b>Message : </b><br><p>" .$msg. "</p>"; 
+    $mail->Body="<b>Name : </b>" .$name. "<br><b>Company Name : </b>" .$comp_name. "<br><b>Email ID : </b>" .$email. "<br><b>Contact No. : </b>" .$cont_no. "<br><b>Message : </b><br><p>" .$msg. "</p>";
 
     if(!$mail->send()){
       $message = "Failed to send Details!";

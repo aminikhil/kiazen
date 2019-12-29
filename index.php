@@ -27,16 +27,16 @@
     $(document).scroll( function() {
       if(Math.abs($(document).scrollTop() - scrollValue) >= 500){
         scrollValue = $(document).scrollTop();
-        checkOffset();
+        // checkOffset();
       }
       });
     // Run function on Clicking
     $('.nav-item a').click(function() {
-        checkOffset();
+        // checkOffset();
     });
   });
 </script>
-<?php 
+<?php
   if(!empty($_GET['message'])) {
     $message = $_GET['message'];
     echo "<script>alert('$message');</script>";
@@ -86,7 +86,6 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12"> <img alt="Failed to load image!" class="img-fluid" src="images/img9.png"> </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-<!--          <h2>Digital Marketing Services</h2>-->
           <h4>Achieve your business objectives and goals using the online channels</h4>
         </div>
       </div>
@@ -378,10 +377,10 @@
     <h2>About Us</h2>
     <h4><b>Vision</b> - Creating opportunities to enhance online business<br>
       <br>
-      <b>Mission</b> - Being results driven and customers focused with transparent and honest solutions.<br>
+      <b>Mission</b> - Being results driven and customer focused with transparent and honest solutions.<br>
       <br>
       At <b>Kaizen Infotek</b> we spend time getting to know your business so we can deliver any online<br>
-      solutions that maximises your brand and your vision.<br>
+      solutions that grows your brand and your vision.<br>
       We take great pride in knowing our company, our software and our people will help you
       achieve these goals.</h4>
   </div>
@@ -389,7 +388,7 @@
 <section id="contact_us" class="contact_us">
   <div class="container text-center">
     <h2>Contact Us</h2>
-    <h5>Hurry Up! Contact us for growing your business with us.</h5>
+    <h5>Hurry Up! Contact us to grow your business.</h5>
     <form name="contact_us_form" class="contact_us_form" action="contact_us.php" method="post" onSubmit="return validate()">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -434,13 +433,13 @@
     </div>
   </div>
 </section>
-<script src="js/js1.js"></script> 
+<script src="js/js1.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.3.1.min.js"></script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.3.1.js"></script>
 </body>
 </html>

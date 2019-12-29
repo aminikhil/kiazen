@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -16,7 +16,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!--  Title Icon-->
 <link rel = "icon" href =  "images/logo1.png" type = "image/x-icon">
-  
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script type="text/javascript">
 //  Code For automatically collaspe navigator
@@ -29,12 +29,12 @@
     $(document).scroll( function() {
       if(Math.abs($(document).scrollTop() - scrollValue) >= 500){
         scrollValue = $(document).scrollTop();
-        checkOffset();
+        // checkOffset();
       }
       });
     // Run function on Clicking
-    $('.nav-item a').click(function() {
-        checkOffset();
+    $('.nav-link a').click(function() {
+        // checkOffset();
     });
   });
 </script>
@@ -130,7 +130,7 @@
     </div>
   </div>
 </section>
-<section class="footer"> 
+<section class="footer">
   <div class="container">
     <div class="row add">
       <div class="col-lg-6 col-sm-12 add-text">
@@ -139,7 +139,7 @@
           Vishrantwadi<br>
           411015.<br>
           <br>
-          <span class="font2"> Email ID : <a>info@digitalabhijit.com</a><br>
+          <span class="font2"> Email ID : <a>info@kaizeninfotek.com</a><br>
           Contact No : +91 83810 71017 </span> </h4>
       </div>
       <div class="col-lg-6 col-sm-12 add-map">
@@ -153,13 +153,12 @@
     </div>
   </div>
 </section>
-<script src="js/js1.js"></script> 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.3.1.min.js"></script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.3.1.js"></script>
 </body>
 </html>
