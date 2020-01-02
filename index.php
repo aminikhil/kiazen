@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Enhance your business, Deliver a digital strategy with measurable performance that grows your brand and
+your vision.">
+<meta name="keywords" content="Real Estate,Agent,Home,Sell,Homes,Sale,Broker,Commercial,Digital Marketing,Services,Web Designing,Website Development,Google Ads,SEO,seo,Social Media Marketing,Kaizen Infotek,kaizen,infotek,kaizeninfotek,Abhijit Sarvade,Pune,Facebook Ads,Marketing">
+<meta name="title" content="Enhance your business at Kaizen Infotek">
 <title>Kaizen Infotek</title>
 <link href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -408,7 +412,11 @@
       </div>
     </div>
     <div class="text-center footer1">
-      <div> <img alt="Failed to load image!" class="img-fluid" src="images/img23.png"> <img alt="Failed to load image!" class="img-fluid" src="images/img24.png"> <img alt="Failed to load image!" class="img-fluid" src="images/img25.png"> <img alt="Failed to load image!" class="img-fluid" src="images/img26.png"> </div>
+      <div>
+        <a href="https://instagram.com/kaizeninfotek?igshid=1eqllt59km2d1"><img alt="Failed to load image!" class="img-fluid" src="images/img23.png"></a>
+        <a href="https://www.facebook.com/Kaizen-Infotek-102871757902592/?view_public_for=102871757902592"><img alt="Failed to load image!" class="img-fluid" src="images/img24.png"></a>
+        <a href="https://wa.me/918381071017"><img alt="Failed to load image!" class="img-fluid" src="images/img26.png"></a>
+      </div>
       <p>Copyright © 2020 · All Rights Reserved by Kaizen Infotek</p>
       <div class="footer-bottom"><a href="privacy_policy.html">Privacy &amp; Policy</a> <a href="terms_and_conditions.html">Terms &amp; Conditions</a> <a href="credits.html">Credits</a></div>
     </div>
