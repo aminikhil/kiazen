@@ -4,14 +4,16 @@ window.onscroll = function () {
 };
 //navigation bar color change on scroll
 function scrollFunction() {
-  
+
 //  for navigation  bar color change on scroll
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.backgroundColor = "#000";
+    document.getElementById("logo_img").style.backgroundColor = "#fff";
   } else {
     document.getElementById("navbar").style.backgroundColor = "rgb(255,255,255,0.3)";
+    document.getElementById("logo_img").style.backgroundColor = "";
   }
-  
+
 //  for navigation through page
   $(window).scroll(function () {
     clearTimeout($.data(this, 'scrollTimer'));
@@ -90,20 +92,20 @@ function validate() {
     return false;
   }
   x = document.forms["contact_us_form"]["email-id"].value;
-  var atposition=x.indexOf("@");  
-  var dotposition=x.lastIndexOf(".");  
-  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-    alert("Please enter a valid e-mail address");  
-    return false;  
-  }  
+  var atposition=x.indexOf("@");
+  var dotposition=x.lastIndexOf(".");
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+    alert("Please enter a valid e-mail address");
+    return false;
+  }
   var num = document.forms["contact_us_form"]["contact-no"].value;
   if(num == "") {
     alert("Please Enter Your Contact Number!");
     return false;
   }
-  if (isNaN(num)){  
-    document.getElementById("numloc").innerHTML="Enter Numeric value only";  
-    return false;  
+  if (isNaN(num)){
+    document.getElementById("numloc").innerHTML="Enter Numeric value only";
+    return false;
   }
   return true;
 }

@@ -17,32 +17,12 @@
 <!--  Title Icon-->
 <link rel = "icon" href =  "images/logo1.png" type = "image/x-icon">
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript">
-//  Code For automatically collaspe navigator
-  $(document).ready(function() {
-    function checkOffset() {
-        $(".navbar-collapse").removeClass("show");
-    }
-    // // Run function when scrolling
-    var scrollValue = $(window).scrollTop();
-    $(document).scroll( function() {
-      if(Math.abs($(document).scrollTop() - scrollValue) >= 500){
-        scrollValue = $(document).scrollTop();
-        // checkOffset();
-      }
-      });
-    // Run function on Clicking
-    $('.nav-link a').click(function() {
-        // checkOffset();
-    });
-  });
-</script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
 </head>
 <body>
 <section id="home" class="header sticky-top">
-  <nav id="navbar" class="navbar navbar-expand-xl navbar-light"> <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+  <nav id="navbar" class="navbar navbar-expand-xl navbar-light"> <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Image not found!"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" name="menu-bar"> <i class="fa fa-bars"></i> </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul id="ul" class="navbar-nav text-left">
         <li class="nav-item"> <a id="nav_home" class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a> </li>

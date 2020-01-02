@@ -15,27 +15,8 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!--  Title Icon-->
 <link rel = "icon" href =  "images/logo1.png" type = "image/x-icon">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript">
-//  Code For automatically collaspe navigator
-  $(document).ready(function() {
-    function checkOffset() {
-        $(".navbar-collapse").removeClass("show");
-    }
-    // // Run function when scrolling
-    var scrollValue = $(window).scrollTop();
-    $(document).scroll( function() {
-      if(Math.abs($(document).scrollTop() - scrollValue) >= 500){
-        scrollValue = $(document).scrollTop();
-        // checkOffset();
-      }
-      });
-    // Run function on Clicking
-    $('.nav-item a').click(function() {
-        // checkOffset();
-    });
-  });
-</script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+
 <?php
   if(!empty($_GET['message'])) {
     $message = $_GET['message'];
@@ -45,8 +26,8 @@
 </head>
 <body>
 <section id="home" class="header sticky-top">
-  <nav id="navbar" class="navbar navbar-expand-xl navbar-light"> <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+  <nav id="navbar" class="navbar navbar-expand-xl navbar-light"> <a class="navbar-brand" href="#"><img id="logo_img" src="images/logo.png" alt="Image not found!"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" name="menu-bar"> <i class="fa fa-bars"></i> </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <ul id="ul" class="navbar-nav text-left">
         <li class="nav-item"> <a id="nav_home" class="nav-link active-home" href="#">Home<span class="sr-only">(current)</span></a> </li>
@@ -392,20 +373,20 @@
     <form name="contact_us_form" class="contact_us_form" action="contact_us.php" method="post" onSubmit="return validate()">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <input type="text" name="name" placeholder="Name">
+          <input id="name" type="text" name="name" placeholder="Name" required>
           <br>
-          <input type="text" name="company-name" placeholder="Company Name">
+          <input type="text" name="company-name" placeholder="Company Name" required>
           <br>
-          <input type="text" name="email-id" placeholder="Email">
+          <input type="text" name="email-id" placeholder="Email" required>
           <br>
-          <input type="text" name="contact-no" placeholder="Contact Number">
+          <input type="text" name="contact-no" placeholder="Contact Number" required>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <textarea name="message" placeholder="Message" rows="8"></textarea>
         </div>
       </div>
       <div class="text-center">
-        <input type="submit" id="sub_btn" name="submit">
+        <input type="submit" id="sub_btn" name="submit" value="Submit">
       </div>
     </form>
   </div>
@@ -423,7 +404,7 @@
           Contact No : +91 83810 71017 </span> </h4>
       </div>
       <div class="col-lg-6 col-sm-12 add-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0506239566826!2d73.87592471489351!3d18.57175628737922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bf69a03aab%3A0xeba37fd3ca871d0a!2sKaizen%20Infotek%20%7C%20Digital%20Marketing%20In%20Pune%20%7C%20Best%20Digital%20Marketing%20Company%20%7C%20SEO%20%7C%20Google%20Ads%20%7C%20Social%20Media%20Marketing!5e0!3m2!1sen!2sin!4v1577446472100!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0506239566826!2d73.87592471489351!3d18.57175628737922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bf69a03aab%3A0xeba37fd3ca871d0a!2sKaizen%20Infotek%20%7C%20Digital%20Marketing%20In%20Pune%20%7C%20Best%20Digital%20Marketing%20Company%20%7C%20SEO%20%7C%20Google%20Ads%20%7C%20Social%20Media%20Marketing!5e0!3m2!1sen!2sin!4v1577446472100!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" title="google maps"></iframe>
       </div>
     </div>
     <div class="text-center footer1">
@@ -441,5 +422,34 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.3.1.js"></script>
+
+<!-- Facebook pexel start -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '538418826748582');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=538418826748582&ev=PageView&noscript=1"
+/></noscript>
+<!-- Facebook pexel ends -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155074940-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155074940-1');
+</script>
+
 </body>
 </html>

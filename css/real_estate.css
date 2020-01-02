@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+.navbar-brand img {
+  background-color: #fff;
+}
+
 .navbar {
   background-color: #000 !important;
 }
@@ -41,4 +45,3 @@
   padding: 5px;
   text-align: right !important;
 }
-

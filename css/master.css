@@ -12,8 +12,9 @@ body {
 
 /*Navbar*/
 .navbar-brand img {
-  height: 70px;
-  margin: -12px 0 -13px -15px;
+  max-height: 70px;
+  padding-left: 5px;
+  margin: -14px 0 -13px -16px;
   padding: 0;
 }
 .navbar {
@@ -51,7 +52,7 @@ body {
 
 /*home*/
 .welcome h1 {
-  padding-top: 17vh !important;
+  padding-top: 19vh !important;
   font-size: 4vw;
   color: #fff;
   -webkit-transform: translateX(0);
@@ -84,6 +85,7 @@ body {
   font-size: 2vw;
   border: 1px solid #FF2010;
   border-radius: 4px;
+  font-weight: bold;
 }
 .welcome button:hover {
   background-color: #FFF;
@@ -523,4 +525,10 @@ body {
 }
 .footer-bottom a {
   color: #fff;
+}
+
+@media screen and (min-width: 1600px){
+  .services1 img {
+    width: 22vw !important
+  }
 }
