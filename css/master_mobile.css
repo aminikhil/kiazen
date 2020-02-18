@@ -19,7 +19,6 @@
     padding-left: 5px !important;
   }
   .welcome h1 {
-    padding-top: 12vh !important;
     font-size: 10vw !important;
   }
   .welcome hr {
@@ -196,5 +195,9 @@
   }
   .services .skill-card__header img {
     width: 100% !important;
+  }
+  .parallax, .digital-marketing, .our-clients, .contact_us {
+    height: auto !important;
+    min-height: 0 !important;
   }
 }
